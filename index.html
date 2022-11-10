@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんアプリ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>にゃんけん</h1>
+    </header>
+      
+    <main>
+
+        <ul id="btn">
+            <li id="rock" value="0">
+                <img src="img/jyannkenn-illust5.png" alt="ぐー">
+            </li>
+            <li id="scissors" value="1">
+                <img src="img/jyannkenn-illust4.png" alt="チョキ">
+            </li>
+            <li id="paper" value="2">
+                <img src="img/jyannkenn-illust6.png" alt="パー">
+            </li>
+        </ul>
+
+        <ul id="battle" class="battle__list">
+            <li id="paw" class="battle__item">
+            </li>
+            <li id="result" class="battle__item">
+            </li>
+        </ul>
+        <div id="luke">
+            <img src="img/IMG_8356.png" alt="luke">
+        </div>
+
+        <table id="countTable">
+            <tr>
+                <td>
+                    <button id="save">記録する</button>
+                </td>
+                <td>
+                    <button id="clear">記録削除</button>
+                </td>
+                <td>
+                    <button id="reset">リトライ</button>
+                </td>
+                
+            </tr>
+        </table>
+        <table id="resultTable">
+            <tr>
+                <dl>
+                    <th>にゃんけん
+                        <dt class="text"></dt>
+                    </th>
+                    <th>試合数
+                        <dt class="text"></dt>
+                    </th>
+                    <th>勝ち数
+                        <dt class="text"></dt>
+                    </th>
+                    <th>負け数
+                        <dt class="text"></dt>
+                    </th>
+                    <th>勝率
+                        <dt class="text"></dt>
+                    </th>
+                    <th>負率
+                        <dt class="text"></dt>
+                    </th>
+                </dl>
+            </tr>
+            <tr>
+                <dl>
+                    <td>
+                        <dd id="gameRound" type="text">進行中</dd>
+                    </td>
+                    <td>
+                        <dd id="gameCount"  type="text">0</dd>
+                    </td>
+                    <td>
+                        <dd id="winCount" type="text">0</dd>
+                    </td>
+                    <td>
+                        <dd id="loseCount" type="text">0</dd>
+                    </td>
+                    <td>
+                        <dd id="winRate" type="text">%</dd>
+                    </td>
+                    <td>
+                        <dd id="loseRate" type="text">%</dd>
+                    </td>
+                </dl>
+            </tr>
+        </table>
+        
+    </main>
+
+    <footer>
+        Copyrights 2022 Ulara Toma All Rights Reserved.
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/janken.js"></script>
+</body>
+</html>
+

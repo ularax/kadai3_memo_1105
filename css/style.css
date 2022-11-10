@@ -1,0 +1,260 @@
+@charset "utf-8";
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 1400px;
+    color: purple;
+    background-color: plum;
+    font-family: "Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    width: 40%;
+    height: auto;
+}/* ここから下に記載していく */
+/* img:hover{
+  box-shadow: 0 0 100px 0 purple inset, 0 0 100px 40px purple;
+  border-radius: 100px;
+} */
+
+h1{
+    color:#ffffff;
+    font-size: 5rem;
+    font-weight: bold;
+    background-color: #ffb6c1;
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    height: 50%;
+}
+ul{
+    color:#6b8e23;
+    font-size: 60px;
+    background-color: #eee8aa;
+    margin: 20px;
+    padding: auto;
+    width: auto;
+    height: 50%;
+}
+ul:hover{
+  background-color: transparent;
+}
+div{
+    color:#6b8e23;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: plum;
+    margin: 20px auto 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#btn{
+    display:flex;
+}
+#rock:hover{
+  background: rgba(0,0,0,.05);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-top: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 2px 2px rgba(0,0,0,.1);
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+}
+#scissors:hover{
+  background: rgba(0,0,0,.05);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-top: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 2px 2px rgba(0,0,0,.1);
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+}
+#paper:hover{
+  background: rgba(0,0,0,.05);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-top: 1px solid rgba(255,255,255,.5);
+  box-shadow: 0 2px 2px rgba(0,0,0,.1);
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+}
+#luke{
+  position: relative;
+  overflow: hidden;
+}
+#luke::before,
+#luke::after{
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  margin: auto;
+  transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
+  opacity: 0;
+}
+#luke::before {
+  background-color: rgba(221,160,221,.6);
+  width: 100%;
+  height: 100%;
+}
+#luke::after {
+  color: #fff;
+  content: "ニャンが相手だよ、グーチョキパーのボタンを押してね！";
+  font-size: 4.8rem;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+}
+#luke:hover::before,
+#luke:hover::after {
+  opacity: 1;
+}
+#paw{
+    width: 50%;
+    height: auto;
+}
+#result{
+    width: 50%;
+    height: auto;
+}
+html{
+    width: auto;
+    height: 50%;
+}
+footer{
+    font-size: 1.6rem;
+}
+
+.battle__list{
+    display: flex;
+    margin: 20px;
+    background-color: plum;
+}
+.battle__item{
+    width:50%;
+    text-align: center;
+}
+
+#countTable{
+    width: 50%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+#countTable td{
+    border: none;
+}
+#save{
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: bold;
+    /* background-color: purple; */
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: purple;
+    box-shadow: 0 0 40px 40px purple inset, 0 0 0 0 purple;
+    transition: all 150ms ease-in-out;
+}
+#save:hover{
+  color: purple;
+  background-color: transparent;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+}
+
+#reset{
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+  /* background-color: purple; */
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border-color: olivedrab;
+  box-shadow: 0 0 40px 40px olivedrab inset, 0 0 0 0 olivedrab;
+  transition: all 150ms ease-in-out;
+}
+#reset:hover{
+color: olivedrab;
+background-color: transparent;
+box-shadow: 0 0 10px 0 olivedrab inset, 0 0 10px 4px olivedrab;
+}
+
+#clear{
+  color: purple;
+  font-size: 2.4rem;
+  font-weight: bold;
+  /* background-color: purple; */
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border-color: purple;
+  box-shadow: 0 0 40px 40px plum inset, 0 0 0 0 purple;
+  transition: all 150ms ease-in-out;
+}
+#clear:hover{
+color: #fff;
+background-color: transparent;
+box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+}
+
+#resultTable {
+    margin: 20px;
+    width: 100%;
+  }
+  dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 4rem;
+  }
+  dd {
+    font-size: 3rem;
+    height: 40px;
+  }
+  .text_result{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px auto;
+    color: olivedrab;
+  }
+  .text{
+    font-size: 3rem;
+  }
+/* thとtdの余白を指定 */
+  table th{
+    padding : 25px 10px;
+  }
+  table td{
+    padding : 25px 10px;
+  }
+/* テーブルの全体幅とセル幅の指定 */
+  table{
+    width: 100%;
+    height: 40px;
+    margin: 15px 20px;
+    font-size: 3rem;
+  }
+  th{
+    width: 16.6%;
+    font-size: 3rem;
+  }
+  td{
+    width: 16.6%;
+  }
+/* 罫線の種類・色・太さの指定 */
+  th,td{
+    border:solid 4px purple;
+  }
